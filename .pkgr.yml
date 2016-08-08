@@ -1,12 +1,10 @@
 targets:
-  debian-7: &debian
+  ubuntu-16.04:
     build_dependencies:
       - libpam0g-dev
     dependencies:
       - libpam0g
       - git
-  ubuntu-16.04:
-    <<: *debian
 before:
   - mv packager/Procfile .
   - mv packager/.godir .
